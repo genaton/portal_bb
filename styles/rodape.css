@@ -22,20 +22,21 @@ hr {
         display: flex;
         align-items: center;
         margin: 0.6em 0;
+        font-size: 18px;
 
     }
     .lista-rodape__link{
-        color: var(--cinza);
+        color: var(--azul-claro);
         text-decoration: none;
-        margin-left: .6em;
+        margin-left: 0em;
     }
     .lista-rodape__link:hover{
-        color: var(--laranja);
+        /* color: var(--azul); */
     }
 
     .lista-rodape__titulo{
         font-size: 14px;
-        color: var(--cinza-claro);
+        color: var(--azul-claro);
     }
 
     .rodape__titulo{
