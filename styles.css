@@ -1,0 +1,43 @@
+@import url("styles/header.css");
+@import url("styles/banner.css");
+@import url("styles/carrossel.css");
+@import url("styles/topicos.css");
+@import url("styles/contato.css");
+@import url("styles/rodape.css");
+@font-face {
+    font-family: 'BancoDoBrasilTitulos'; /* Nome para referência */
+    src: url('./Webfonts/TTF-WEB/BancoDoBrasilTitulos-XBold-web.ttf') format('truetype'); /* Caminho para a fonte */
+    font-weight: normal; /* Personalize o peso, se necessário */
+    font-style: normal;  /* Personalize o estilo, se necessário */
+}
+
+@font-face {
+    font-family: 'BancoDoBrasilTextos'; /* Nome para referência */
+    src: url('./Webfonts/TTF-WEB/BancoDoBrasilTextos-Medium-web.ttf') format('truetype'); /* Caminho para a fonte */
+    font-weight: normal; /* Personalize o peso, se necessário */
+    font-style: normal;  /* Personalize o estilo, se necessário */
+}
+:root {
+    --cor-de-fundo: #EBECEE;
+    --branco: #ffffff;
+    --amarelo:#FCFC30;
+    --rosa-claro:#FF6E91;
+    --preto-hoover:#0000004d;
+    --laranja: #eb9b00;
+    --azul-degrade: linear-gradient(97.54deg, #002d4b 35.49%, #326589 165.37%);
+    --fonte-principal: "BancoDoBrasilTitulos";
+    --azul: #002d4b;
+    --azul-claro: #3d5aff;
+    --fonte-secundario: "BancoDoBrasilTextos";
+    --preto: black;
+    --cinza: #69696E;
+    --cinza-claro: #afafaf;
+}
+
+body{
+    background-color: var(--cor-de-fundo);
+    font-family:var(--fonte-secundario);
+    font-size: 16px;
+    font-weight: 400;
+}
+
