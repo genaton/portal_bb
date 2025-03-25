@@ -1,6 +1,10 @@
-.form{
- display: flex;
- align-items: center;
- padding: auto;   
- 
+.form {
+  background-image: url("/img/banner_bom_pra_todos.svg");
+  background-repeat: no-repeat;
+  background-size: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: auto;
 }
+
