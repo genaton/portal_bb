@@ -69,14 +69,15 @@
 
 .botoes__ancora {
   text-decoration: none;
-  background-color: var(--laranja);
+  border-radius: 8px;
+  background-color: var(--azul-claro);
   padding: 1em 2.2em;
   color: var(--branco);
   font-weight: 700;
 }
 
 .botoes__ancora:active{
-    background-color: var(--azul);
+    background-color: var(--azul-claro);
 }
 
 .card {
@@ -88,11 +89,11 @@
 }
 
 .descricao__titulo {
-  color: var(--laranja);
+  color: var(--azul-claro);
   font-weight: 700;
 }
 
-.descricao__titulo-livro {
+.descricao__titulo-vantagens {
   color: var(--azul);
   font-size: 18px;
   font-weight: 700;

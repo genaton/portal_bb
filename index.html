@@ -193,10 +193,6 @@
         </form> -->
     </section>
     <section class="carrossel">
-        <!-- Carousel -->
-       
-    </section>
-    <section class="carrossel">
         <h2 class="carrossel__titulo">Escolha o seu!</h2>
         <div class="carrossel__container">
             <!-- Slider main container -->
@@ -207,18 +203,17 @@
 
                 <div class="swiper-wrapper">
                     <!-- Slides -->
-                    <div class="swiper-slide"><img src="img/Ourocard-Elo-padrao.webp"
-                         class="rotate-90" alt="Cartão Ourocard Elo Padrão"></div>
-                    <div class="swiper-slide"><img src="img/Ourocard_visa_platinum.webp"
-                         class="rotate-90" alt="Cartão Ourocard Visa Platinum"></div>
-                    <div class="swiper-slide"><img src="img/Group-Cartoes-Mastercard-Black.jpg"
-                         class="rotate-90" alt="Cartão Ourocard Mastercard black"></div>
-                    <div class="swiper-slide"><img src="img/Ourocard-Elo-Mais.webp"
-                         class="rotate-90"  alt="Cartão Ourocard Elo Mais"></div>
-                    <div class="swiper-slide"><img src="img/Ourocard-Elo-Nanquim-padrao.webp" 
-                         class="rotate-90" alt="Cartão Ourocard Elo Nanquim"></div>
-                    <div class="swiper-slide"><img src="img/dz.webp"
-                         class="rotate-90" alt="Cartão Dotz Platinum"></div>
+                    <div class="swiper-slide"><img src="img/Ourocard-Elo-padrao.webp" class="rotate-90"
+                            alt="Cartão Ourocard Elo Padrão"></div>
+                    <div class="swiper-slide"><img src="img/Ourocard_visa_platinum.webp" class="rotate-90"
+                            alt="Cartão Ourocard Visa Platinum"></div>
+                    <div class="swiper-slide"><img src="img/Group-Cartoes-Mastercard-Black.jpg" class="rotate-90"
+                            alt="Cartão Ourocard Mastercard black"></div>
+                    <div class="swiper-slide"><img src="img/Ourocard-Elo-Mais.webp" class="rotate-90"
+                            alt="Cartão Ourocard Elo Mais"></div>
+                    <div class="swiper-slide"><img src="img/Ourocard-Elo-Nanquim-padrao.webp" class="rotate-90"
+                            alt="Cartão Ourocard Elo Nanquim"></div>
+                    <div class="swiper-slide"><img src="img/dz.webp" class="rotate-90" alt="Cartão Dotz Platinum"></div>
 
                 </div>
 
@@ -231,26 +226,26 @@
             <div class="card">
                 <div class="card__descricao">
                     <!-- 1 coluna-->
-                    <!-- <div class="descricao">
-                        <h3 class="descricao__titulo">Talvez você se interesse também por...</h3>
-                        <h2 class="descricao__titulo-livro">Angular 11 e Firebase</h2>
-                        <p class="descricao__texto">Construindo uma aplicacao integrada com a plataforma Angular</p>
-                    </div> -->
+                    <div class="descricao">
+                        <h3 class="descricao__titulo">Um mundo de vantagens!</h3>
+                        <h2 class="descricao__titulo-vantagens">Sugestão de consumo por IA</h2>
+                        <p class="descricao__texto">Saiba mais</p>
+                    </div>
                     <!-- 2 coluna -->
-                    <!-- <img src="img/Angular.svg" class="descricao__imagem"> -->
+                    <!-- <img src="img/logoBBAzulClaro.svg" alt="logo BB"class="descricao__imagem"> -->
 
                 </div>
                 <!--2 linha-->
                 <div class="card__botoes">
                     <!-- 1 coluna-->
-                    <!-- <ul class="botoes">
-                        <li class="botoes__item"><img src="img/Favoritos.svg" alt="Favoritar livro"></li>
+                    <ul class="botoes">
+                        <!-- <li class="botoes__item"><img src="img/Favoritos.svg" alt="Favoritar livro"></li>
                         <li class="botoes__item"><img src="img/Compras.svg"
-                                alt="Adicionar livro no carrinho de compras">
+                                alt="Adicionar livro no carrinho de compras"> -->
                         </li>
-                    </ul> -->
+                    </ul>
                     <!--2 coluna-->
-                    <!-- <a href="#" class="botoes__ancora">saiba mais</a> -->
+                    <a href="#" class="botoes__ancora">saiba mais</a>
                 </div>
 
             </div>
@@ -423,17 +418,18 @@
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <script>
         var swiper = new Swiper('.swiper', {
-            slidesPerView: 1.8,  // Mostra 3 slides ao mesmo tempo
-            spaceBetween: 20,  // Espaço de 20px entre eles
-            centeredSlides: true,  // Centraliza o slide ativo
-            loop:false,
+            slidesPerView: 1.8, // Mostra 3 slides ao mesmo tempo
+            spaceBetween: 20, // Espaço de 20px entre eles
+            centeredSlides: true, // Centraliza o slide ativo
+            loop: false,
             pagination: {
-            effect: "slide", /* ou "coverflow" para efeito 3D */
+                effect: "slide",
+                /* ou "coverflow" para efeito 3D */
                 el: '.swiper-pagination',
                 clickable: true,
             },
-            
-    
+
+
         });
     </script>
     <!-- <script defer src="index.js"></script> -->
