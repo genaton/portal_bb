@@ -4,6 +4,7 @@
 @import url("styles/topicos.css");
 @import url("styles/contato.css");
 @import url("styles/rodape.css");
+@import url("styles/form.css");
 @font-face {
     font-family: 'BancoDoBrasilTitulos'; /* Nome para referência */
     src: url('./Webfonts/TTF-WEB/BancoDoBrasilTitulos-XBold-web.ttf') format('truetype'); /* Caminho para a fonte */

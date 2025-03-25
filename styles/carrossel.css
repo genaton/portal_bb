@@ -29,13 +29,6 @@
   border: 3px solid #3d5aff;
   box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
 }
-#cartoes{
-  padding: 0em;
-}
-
-.carousel-control-prev-icon, .carousel-control-next-icon {
-  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='w3.org/2000/svg' fill='' viewBox='0 0 8 8'%3E%3Cpath d='M2.75 0l-1.5 1.5 2.5 2.5-2.5 2.5 1.5 1.5 4-4-4-4z'/%3E%3C/svg%3E");
-}
 
 .swiper-slide img {
   width: 100%;
@@ -79,6 +72,7 @@
 .botoes__ancora:active{
     background-color: var(--azul-claro);
 }
+
 
 .card {
   background: var(--branco);
