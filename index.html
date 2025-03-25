@@ -203,18 +203,15 @@
                     <div class="swiper-slide"><img src="img/Ourocard-Elo-padrao.webp"
                          class="rotate-90" alt="Cartão Ourocard Elo Padrão"></div>
                     <div class="swiper-slide"><img src="img/Ourocard_visa_platinum.webp"
-                        class="rotate-90
-                            alt="Livro sobre liderança em design da alura books"></div>
+                         class="rotate-90" alt="Cartão Ourocard Visa Platinum"></div>
                     <div class="swiper-slide"><img src="img/Group-Cartoes-Mastercard-Black.jpg"
-                        class="rotate-90"
-                            alt="Livro sobre Javascript assertivo da alura books"></div>
-                    <div class="swiper-slide"><img src="img/Guia Front-end.svg"
-                            alt="Livro sobre Front-end da alura books">
-                    </div>
-                    <div class="swiper-slide"><img src="img/Portugol.svg" alt="Livro sobre Portugol da alura books">
-                    </div>
-                    <div class="swiper-slide"><img src="img/Acessibilidade.svg"
-                            alt="Livro sobre Acessibilidade Web da alura books"></div>
+                         class="rotate-90" alt="Cartão Ourocard Mastercard black"></div>
+                    <div class="swiper-slide"><img src="img/Ourocard-Elo-Mais.webp"
+                         class="rotate-90"  alt="Cartão Ourocard Elo Mais"></div>
+                    <div class="swiper-slide"><img src="img/Ourocard-Elo-Nanquim-padrao.webp" 
+                         class="rotate-90" alt="Cartão Ourocard Elo Nanquim"></div>
+                    <div class="swiper-slide"><img src="img/dz.webp"
+                         class="rotate-90" alt="Cartão Dotz Platinum"></div>
 
                 </div>
 
@@ -417,20 +414,20 @@
     </footer>
 
 
-
-
-
-
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <script>
-        const swiper = new Swiper('.swiper', {
-            speed: 400,
-            spaceBetween: 10,
-            slidesPerView: 3,
+        var swiper = new Swiper('.swiper', {
+            slidesPerView: 1.8,  // Mostra 3 slides ao mesmo tempo
+            spaceBetween: 20,  // Espaço de 20px entre eles
+            centeredSlides: true,  // Centraliza o slide ativo
+            loop:false,
             pagination: {
+            effect: "slide", /* ou "coverflow" para efeito 3D */
                 el: '.swiper-pagination',
-                type: 'bullets',
+                clickable: true,
             },
+            
+    
         });
     </script>
     <!-- <script defer src="index.js"></script> -->

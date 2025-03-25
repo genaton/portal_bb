@@ -1,0 +1,163 @@
+.carrossel__titulo {
+  color: var(--azul-claro);
+  background-color: var(--branco);
+  text-align: center;
+  text-transform: uppercase;
+  font-size: 18px;
+  font-weight: 700;
+  padding: 1em 0 0.5em 0;
+}
+
+.rotate-90 {
+  transform: rotate(0deg);
+}
+
+
+
+.swiper-slide {
+  background: #fff;
+  border-radius: 15px;
+  overflow: hidden;
+  opacity: 0.6;
+  transform: scale(1.5);
+  transition: all 0.3s ease;
+}
+
+.swiper-slide-active {
+  opacity: 1;
+  transform: scale(1.50);
+  border: 3px solid #3d5aff;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
+}
+
+.swiper-slide img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+.swiper-button-prev, .swiper-button-next {
+  display: block;
+}
+
+.swiper-pagination {
+  position: initial;
+  margin: 0.5em;
+}
+
+.card__descricao {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 1.5em;
+}
+
+.card__botoes {
+  display: flex;
+  justify-content: space-between;
+}
+
+.botoes {
+  display: flex;
+}
+
+.botoes__ancora {
+  text-decoration: none;
+  background-color: var(--laranja);
+  padding: 1em 2.2em;
+  color: var(--branco);
+  font-weight: 700;
+}
+
+.botoes__ancora:active{
+    background-color: var(--azul);
+}
+
+.card {
+  background: var(--branco);
+  box-shadow: 0px 4px 4px rgb(0, 0, 0, 0.25);
+  border-radius: 10px;
+  margin: 5em;
+  padding: 1em;
+}
+
+.descricao__titulo {
+  color: var(--laranja);
+  font-weight: 700;
+}
+
+.descricao__titulo-livro {
+  color: var(--azul);
+  font-size: 18px;
+  font-weight: 700;
+  margin: 0.5em 0;
+}
+
+.descricao__texto {
+  font-size: 14px;
+}
+
+.botoes__item {
+  margin: 0 0.5em;
+}
+
+.estrelas {
+  display: flex;
+  margin-bottom: 1em;
+}
+
+@media screen and (min-width: 1024px) {
+  .carrossel__titulo {
+    font-size: 26px;
+  }
+  .swiper-pagination {
+    margin: 2em 0 3em 0;
+  }
+
+  .swiper {
+    width: 60%;
+  }
+
+  .swiper-button-prev,
+  .swiper-button-next {
+    display: block;
+    top: 60%;
+  }
+
+  .card {
+    width: 40%;
+    margin: 2em auto;
+  }
+}
+
+@media screen and (min-width: 1728px) {
+  .carrossel__container {
+    display: flex;
+    margin: 0 20vw 3em 20vw;
+    align-items: center;
+  }
+
+  .swiper-pagination{
+    margin: 1em 0;
+  }
+  .swiper{
+    width: 50%;
+  }
+  .descricao__titulo{
+    font-size: 32px;
+  }
+
+  .descricao__texto{
+    font-size: 16px;
+  }
+
+  .descricao{
+    margin-right: 2em;
+  }
+
+  .card{
+    width: 50%;
+    margin-left: 3em;
+  }
+
+
+}
