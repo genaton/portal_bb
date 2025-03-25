@@ -1,35 +1,16 @@
-const swiper = new Swiper('.swiper', {
-    speed: 400,
-    spaceBetween: 10,
-    slidesPerView: 3,
+var swiper = new Swiper('.swiper', {
+    slidesPerView: 1.8, // Mostra 3 slides ao mesmo tempo
+    spaceBetween: 20, // Espaço de 20px entre eles
+    centeredSlides: true, // Centraliza o slide ativo
+    loop: false,
     pagination: {
+        effect: "slide",
+        /* ou "coverflow" para efeito 3D */
         el: '.swiper-pagination',
-        type: 'bullets',
+        clickable: true,
     },
+    navigation:{
+        nextEl: '.swiper-button-next',
+        prevEl: '.swiper-button-prev'
+    }
 });
-
-import Swiper from 'swiper';
-import { Navigation } from 'swiper/modules';
-
-// import Swiper and modules styles
-import 'swiper/swiper.min.css';
-import 'swiper/modules/navigation.min.css';
-
-const swiper = new Swiper('.swiper', {
-  modules: [Navigation],
-  ....,
-  // Navigation arrows
-  navigation: {
-    nextEl: '.swiper-button-next',
-    prevEl: '.swiper-button-prev',
-  },
-});
-
-// OR (Alternative)
-
-// const swiper = new Swiper('.swiper', {
-//   modules: [Navigation],
-//   ....,
-// });
-// swiper.nextEl = '.swiper-button-next';
-// swiper.prevEl = '.swiper-button-prev';
