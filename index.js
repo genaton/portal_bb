@@ -14,3 +14,19 @@ var swiper = new Swiper('.swiper', {
         prevEl: '.swiper-button-prev'
     }
 });
+
+var swiper2 = new Swiper('.swiper2', {
+    slidesPerView: 2,
+    spaceBetween: 50,
+    centeredSlides: false,
+    loop: true,
+    pagination: {
+        effect: "coverflow",
+        el: '.swiper2 .swiper-pagination',
+        clickable: true,
+    },
+    navigation: {
+        nextEl: '.swiper2 .swiper-button-next',
+        prevEl: '.swiper2 .swiper-button-prev'
+    }
+});
