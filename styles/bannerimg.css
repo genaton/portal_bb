@@ -1,10 +1,62 @@
 .bannerimg {
-    width: 100%;
-    margin: 0;
-    padding: 0;
+  width: 100%;
+  margin: 0;
+  padding: 0;
 }
 .bannerimg img {
-    display: block;
-    width: 100%;
-    height: auto;
+  display: block;
+  width: 100%;
+  height: auto;
 }
+.animated-text {
+  position: absolute;
+  top: 50%;
+  left: 10px;
+  transform: translateY(-50%);
+  font-size: 5em;
+  font-weight: bold;
+  color: var(--rosa-claro);
+  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+  opacity: 0;
+  animation: fadeIn 3s ease-out forwards;
+}
+
+.linha1 {
+    top: 30%;
+    left: 10px; /* Deslocamento inicial */
+    animation-delay: 0s;
+  }
+  
+  .linha2 {
+    top: 45%;
+    left: 50px; /* Mais deslocado que a linha anterior */
+    animation-delay: 1s;
+  }
+  
+  .linha3 {
+    top: 60%;
+    left: 190px; /* Ainda mais deslocado */
+    animation-delay: 2s;
+  }
+  .linha4 {
+    top: 75%;
+    left: 100px; /* Ainda mais deslocado */
+    animation-delay: 3s;
+  }
+
+  .linha5 {
+    top: 90%;
+    left: 220px; /* Ainda mais deslocado */
+    animation-delay: 4s;
+  }
+
+@keyframes fadeIn {
+    from {
+      opacity: 0;
+      transform: translateY(20px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
