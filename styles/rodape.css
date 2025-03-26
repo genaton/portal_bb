@@ -31,7 +31,7 @@ hr {
         margin-left: 0em;
     }
     .lista-rodape__link:hover{
-        /* color: var(--azul); */
+        color: var(--azul);
     }
 
     .lista-rodape__titulo{
@@ -58,3 +58,4 @@ hr {
         padding: 3em 0;
     }
 }
+
