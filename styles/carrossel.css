@@ -73,6 +73,10 @@
     background-color: var(--azul-claro);
 }
 
+.botoes__ancora:hover {
+  background-color: var(--azul-hover);
+}
+
 
 .card {
   background: var(--branco);
