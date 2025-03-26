@@ -24,3 +24,14 @@ Após baixar o projeto, você pode abrir com o Visual Studio Code. Para isso, no
 - Por fim clique em OK
 
 Ao finalizar esses passos, você pode executar a aplicação com a extensão Live Server 
+
+## Descrição da estrutura dos arquivos e pastas.
+
+- `portal_BB` : pasta raiz do projeto;
+  - `img` : pasta com imagens utilizadas no projeto;
+  - `styles` : pasta contendo arquivos CSS para estilização de cada segmento do projeto (header, rodape, banner, etc.)
+  - `Webfonts` : pasta contendo a tipografia personalizada utilizada no projeto que é a oficial do BB.
+  - `index.html`: código de desenvolvimento em HTML usado na landing page.
+  - `index.js` : código externo ao HTML, em javascript, usado para manipulação do DOM e inserção de elementos dinâmicos na landing page.
+  - `reset.css` : código CSS para 'resetar' as configuraçãos padrão do CSS em navegadores.
+  - `styles.css` : código CSS principal que concatena os outros arquivos CSS para um fácil gerenciamento de estilos do projeto. 
