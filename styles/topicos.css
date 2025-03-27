@@ -1,14 +1,15 @@
 .topicos{
-    background: var(--rosa-claro);
+    background: var(--verde);
     text-align: center;
     padding: 1em 0;
+   
 
 }
 
 .topicos__titulo{
-    color: var(--branco);
+    color: var(--azul-claro);
     font-weight: 700;
-    margin-bottom: 1em ;
+    margin-bottom: 1.0em ;
 
 }
 
@@ -50,8 +51,19 @@
 
 @media screen and (min-width: 1728px) {
     .topicos{
-        padding: 3em 20vw;
+        height: 10vh;
+        text-align: center;
+        align-items: center;
+        position: static; /* Torna a seção "pegajosa" */
+        top: 0px; /* Define a distância do topo da tela quando a seção se torna "pegajosa" */
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Adiciona sombra */
+        z-index: 1000; /* Garante que a seção sobreponha outros elementos */
+        bottom: 0; /* Define a distância da parte inferior da tela quando a seção se torna "pegajosa" */
+        width: 100%; /* Define a largura da seção */
+        display: none; /* Inicialmente oculta a seção */
+        
     }
-    
+
+
     
 }

@@ -155,3 +155,19 @@ group2.style.display = 'none';
 
 // Alterna os textos a cada 10 segundos
 setInterval(toggleTexts, 10000);
+
+//Função de congelar
+window.addEventListener('scroll', function() {
+    var topicos = document.querySelector('.topicos');
+    var rect = topicos.getBoundingClientRect();
+    var windowHeight = window.innerHeight;
+    var documentHeight = document.documentElement.scrollHeight;
+    var scrollPosition = window.scrollY + windowHeight;
+
+    if (rect.top < windowHeight && rect.bottom >= 0 && scrollPosition < documentHeight) {
+        topicos.style.display = 'block'; // Exibe a seção quando ela entra na tela e não ultrapassa o tamanho da página
+    } else {
+        topicos.style.display = 'none'; // Oculta a seção quando ela sai da tela ou ultrapassa o tamanho da página
+    }
+});
+

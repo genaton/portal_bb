@@ -1,3 +1,6 @@
+.carrossel {
+  background-color: var(--amarelo-claro);
+}
 
 .carrossel__titulo {
   color: var(--azul-claro);
