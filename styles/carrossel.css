@@ -91,6 +91,15 @@
   font-weight: 700;
 }
 
+.botoes__ancora2 {
+  text-decoration: none;
+  border-radius: 8px;
+  background-color: var(--azul-claro);
+  padding: 0.5em 1.2em;
+  color: var(--branco);
+  font-weight: 700;
+}
+
 .botoes__ancora:active{
     background-color: var(--azul-claro);
 }
@@ -247,7 +256,6 @@
     text-transform: uppercase;
     font-size: 25px;
     font-weight: 800;
-  
   }
 
   .carrossel__container {
@@ -260,6 +268,16 @@
     display: flex;
     align-items: self-end;  
     align-items: center;
+  }
+
+  .botoes__ancora2 {
+    text-decoration: none;
+    border-radius: 5px;
+    background-color: var(--azul-claro);
+    padding: 0.5em 1.2em;
+    color: var(--branco);
+    font-weight: 100;
+    box-sizing: flex;
   }
 
   .swiper-pagination{
