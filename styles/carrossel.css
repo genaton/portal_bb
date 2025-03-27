@@ -1,8 +1,22 @@
 .carrossel {
+  background-color: var(--cor-de-fundo);
+}
+
+.carrossel2 {
   background-color: var(--amarelo-claro);
 }
 
 .carrossel__titulo {
+  color: var(--azul-claro);
+  background-color: var(--branco);
+  text-align: center;
+  text-transform: uppercase;
+  font-size: 18px;
+  font-weight: 700;
+  padding: 1em 0 0.5em 0;
+}
+
+.carrossel__titulo2 {
   color: var(--azul-claro);
   background-color: var(--branco);
   text-align: center;
@@ -225,6 +239,17 @@
 }
 
 @media screen and (min-width: 1728px) {
+
+  .carrossel__titulo2 {
+    color: var(--azul-claro);
+    background-color: var(--branco);
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 25px;
+    font-weight: 800;
+  
+  }
+
   .carrossel__container {
     display: flex;
     margin: 0 20vw 3em 20vw;
@@ -234,6 +259,7 @@
   .carrossel__container2 {
     display: flex;
     align-items: self-end;  
+    align-items: center;
   }
 
   .swiper-pagination{
