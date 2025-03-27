@@ -111,19 +111,28 @@
   margin-bottom: 1em;
 }
 
+/*-----swiper2------*/
+
 .carrossel__container,
 .carrossel__container2 {
-  max-width: 100vw; /* Evita que o carrossel ultrapasse a largura da tela */
-  overflow: visible; /* Impede que os slides "fujam" do contêiner */
+  max-width: 200vw; /* Evita que o carrossel ultrapasse a largura da tela */
+  overflow: hidden; /* Impede que os slides "fujam" do contêiner */
 }
 
 .swiper2 {
-  max-width: 90%;
-  margin: auto;
+  width: auto; /* Garante que o carrossel ocupe 100% da largura do contêiner */
+  max-width: 100%; /* Impede que o carrossel ultrapasse o tamanho da tela */
+  margin: auto;  /* Centraliza o carrossel */
 }
 
-.swiper2 .swiper-slide {
-  position: relative;
+.swiper2 .swiper-slide img {
+  width: 100%;  /* Garante que a imagem ocupe toda a largura do slide */
+  height: auto;  /* Mantém a proporção da imagem */
+  object-fit: cover;  /* Garante que a imagem cubra o slide, sem cortar */
+}
+
+.carrossel__container2 {
+  padding-bottom: 50px;  /* Adiciona um espaço extra abaixo dentro da seção do carrossel */
 }
 
 .swiper2 .swiper-slide .slide-text {

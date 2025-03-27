@@ -10,7 +10,7 @@ body {
     padding: 20px;
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-    width: 300px; /* Ajuste conforme necessário */
+    width: 400px; /* Ajuste conforme necessário */
     z-index: 1000; /* Sobrepõe tudo na página */
 }
 
@@ -20,9 +20,10 @@ body {
 }
 
 .formulario label {
+    text-align: left; /* Alinha as labels à esquerda */
     display: block;
-    margin-top: 10px;
-    text-align: center;
+    margin-top: 20px;
+ 
 }
 
 .formulario input {

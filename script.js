@@ -43,19 +43,18 @@ var swiper = new Swiper('.swiper', {
 });
 
 var swiper2 = new Swiper('.swiper2', {
-    slidesPerView: 2,
-    spaceBetween: 70,
-    centeredSlides: true,
-    loop: false,
+    slidesPerView: 2,  // Exibe 2 slides por vez
+    spaceBetween: 70,   
+    centeredSlides: true, // Garante que os slides fiquem centralizados
+    loop: false,  // Ativa o loop dos slides
     pagination: {
-        effect: "coverflow",
-        el: '.swiper2 .swiper-pagination',
-        clickable: true,
+        effect: "covesliderflow",  // Efeito visual dos slides
+        el: '.swiper2 .swiper-pagination',  // Seleciona o elemento de paginação
+        clickable: true,  // Habilita a navegação através das bolinhas
     },
     navigation: {
-        nextEl: '.swiper2 .swiper-button-next',
-        prevEl: '.swiper2 .swiper-button-prev'
-    }
+        nextEl: '.swiper2 .swiper-button-next',  // Botão de navegação "próximo"
+        prevEl: '.swiper2 .swiper-button-prev',  // Botão de navegação "anterior"
+    },
+    
 });
-
-
