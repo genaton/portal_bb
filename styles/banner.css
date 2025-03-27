@@ -2,7 +2,7 @@
     background: var(--rosa-claro);
     color: var(--branco);
     text-align: center;
-    padding: 2.5em 2em;
+    padding: 1em 2em;
 
 }
 
@@ -52,13 +52,11 @@
 }
 
 @media screen and (min-width: 1728px) {
-    .banner__pesquisa{
-        width: 30%;
-    }
-    .banner__pesquisa::placeholder{
-        background-position: 09em;
     }
     .banner{
-        padding: 5em 0;
+        height: auto;
+        text-align: center;
+        align-items: center;
     }
-}
+
+    
