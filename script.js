@@ -58,3 +58,24 @@ var swiper2 = new Swiper('.swiper2', {
     },
     
 });
+// Seleciona os grupos de texto
+const group1 = document.querySelector('.group1');
+const group2 = document.querySelector('.group2');
+
+// Função para alternar os textos
+function toggleTexts() {
+    if (group1.style.display === 'none') {
+        group1.style.display = 'block';
+        group2.style.display = 'none';
+    } else {
+        group1.style.display = 'none';
+        group2.style.display = 'block';
+    }
+}
+
+// Inicializa os textos com o grupo 1 visível
+group1.style.display = 'block';
+group2.style.display = 'none';
+
+// Alterna os textos a cada 10 segundos
+setInterval(toggleTexts, 10000);

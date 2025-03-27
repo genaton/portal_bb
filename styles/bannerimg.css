@@ -1,4 +1,5 @@
 .bannerimg {
+    position: relative;
     width: 100%;
     margin: 0;
     padding: 0;
@@ -10,26 +11,40 @@
     height: auto;
   }
   
-  .animated-text {
-    position: absolute;
-    font-size: 8vw; /* Fonte responsiva baseada na largura da tela */
+  .text-group {
+    position: absolute; /* Posiciona os textos sobre a imagem */
+    top: 0;
+    left: 10px;
+    width: 100%; /* Texto ocupa a largura total da seção */
+    height: 100%; /* Texto ocupa a altura da imagem */
+    display: flex;
+    flex-direction: column;
+    justify-content: center; /* Centraliza verticalmente */
+    align-items: center; /* Centraliza horizontalmente */
+    z-index: 1; /* Garante que os textos fiquem acima da imagem */
+}
+
+.animated-text {
+    font-size: 6.5vw; /* Texto responsivo */
     font-weight: bold;
-    color: var(--rosa-claro);
+    color: var(--rosa-claro); /* Define a cor do texto */
     text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
     opacity: 0;
     animation: fadeIn 3s ease-out forwards;
-  }
-  
+    margin-left: 2vw;
+}
   .linha1 {
     top: 25%;
     left: 2vw; /* Usando vw para ser responsivo */
     animation-delay: 0s;
+    margin-left: 2vw;
   }
   
   .linha2 {
     top: 45%;
     left: 6vw; /* Incremento proporcional */
     animation-delay: 1s;
+    margin-left: 3vw;
   }
   
   .linha3 {
@@ -49,6 +64,10 @@
     left: 15vw;
     animation-delay: 4s;
   }
+.linha6 { top: 30%; left: 10vw; animation-delay: 0s; }
+.linha7 { top: 50%; left: 15vw; animation-delay: 1s; }
+.linha8 { top: 70%; left: 20vw; animation-delay: 2s; }
+.linha9 { top: 90%; left: 25vw; animation-delay: 3s; }
   
   @keyframes fadeIn {
     from {
