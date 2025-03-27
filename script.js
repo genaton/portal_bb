@@ -80,7 +80,20 @@ const cardTexts = [
         ]
     }
 ];
+// Função para atualizar o texto do card
+function updateCardText() {
+    const activeIndex = swiper.activeIndex; // Obtém o índice do slide ativo
+    const cardInfo = cardTexts[activeIndex]; // Pega os textos correspondentes do array
 
+    // Atualiza os textos na div `card`
+    document.querySelector('.descricao__titulo').textContent = cardInfo.titulo;
+    document.querySelector('.descricao__titulo-vantagens').textContent = cardInfo.vantagens;
+
+    const textElements = document.querySelectorAll('.descricao__texto');
+    cardInfo.textos.forEach((texto, index) => {
+        textElements[index].textContent = texto;
+    });
+}
 
 
 var swiper = new Swiper('.swiper', {
@@ -103,20 +116,7 @@ var swiper = new Swiper('.swiper', {
     } 
 });
 
-// Função para atualizar o texto do card
-function updateCardText() {
-    const activeIndex = swiper.activeIndex; // Obtém o índice do slide ativo
-    const cardInfo = cardTexts[activeIndex]; // Pega os textos correspondentes do array
 
-    // Atualiza os textos na div `card`
-    document.querySelector('.descricao__titulo').textContent = cardInfo.titulo;
-    document.querySelector('.descricao__titulo-vantagens').textContent = cardInfo.vantagens;
-
-    const textElements = document.querySelectorAll('.descricao__texto');
-    cardInfo.textos.forEach((texto, index) => {
-        textElements[index].textContent = texto;
-    });
-}
 
 var swiper2 = new Swiper('.swiper2', {
     slidesPerView: 2,  // Exibe 2 slides por vez
