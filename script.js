@@ -171,3 +171,14 @@ window.addEventListener('scroll', function() {
     }
 });
 
+// Configuração do VLibras
+document.addEventListener('DOMContentLoaded', function() {
+    new window.VLibras.Widget({
+        rootPath: 'https://vlibras.gov.br/app',
+        personalization: 'https://vlibras.gov.br/api/config',
+        opacity: 0.7,     // Opacidade do botão (0 a 1)
+        position: 'R',    // Posição (L = esquerda, R = direita)
+        avatar: 'female'  // Avatar ('male', 'female' ou 'random')
+    });
+});
+

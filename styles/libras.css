@@ -1,0 +1,15 @@
+/* Estilização do botão do VLibras */
+[vw-access-button] {
+    background-color: #0066cc !important; /* Cor do botão */
+}
+
+[vw] [vw-plugin-wrapper] {
+    border-radius: 10px !important; /* Borda arredondada */
+}
+
+/* Exemplo: Esconder o botão em telas pequenas */
+@media (max-width: 600px) {
+    [vw-access-button] {
+        transform: scale(0.8); /* Reduz tamanho */
+    }
+}

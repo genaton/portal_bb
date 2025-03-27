@@ -54,7 +54,7 @@
         height: 10vh;
         text-align: center;
         align-items: center;
-        position: static; /* Torna a seção "pegajosa" */
+        position: relative; /* Torna a seção "pegajosa" */
         top: 0px; /* Define a distância do topo da tela quando a seção se torna "pegajosa" */
         box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Adiciona sombra */
         z-index: 1000; /* Garante que a seção sobreponha outros elementos */
