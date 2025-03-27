@@ -27,6 +27,7 @@
 @media screen and (min-width: 1728px) {
   .form {
     background-image: url("/img/banner_bom_pra_todos.svg");
+    background-color: var(--amarelo);
     background-repeat: no-repeat;
     background-size: 100%;
     display: flex;
