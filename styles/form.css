@@ -1,18 +1,37 @@
 .form {
-  background-image: url("/img/banner_bom_pra_todos.svg");
-  background-repeat: no-repeat;
+    background-color: none;
+  /* background-image: url("/img/banner_bom_pra_todos.svg"); */
+  /* background-repeat: no-repeat; */
   background-size: 100%;
   display: flex;
   align-items: center;
   justify-content: center;
   padding: auto;
-  
 }
-.form-group{
-    color: var(--azul-claro);
+.form-group {
+  color: var(--azul-claro);
 }
 
 .form-text {
-    font-size: 1rem !important;
+  font-size: 1rem !important;
+}
+/* Quando a resolução for para telas menores (mobile) */
+@media screen and (max-width: 1728px) {
+  .form {
+    /* background-image: none; Remove a imagem de fundo */
+    background-color: var(--amarelo); /* Substitui por uma cor sólida */
+  }
+}
 
+/* Estilo para telas maiores */
+@media screen and (min-width: 1728px) {
+  .form {
+    background-image: url("/img/banner_bom_pra_todos.svg");
+    background-repeat: no-repeat;
+    background-size: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: auto;
+  }
 }
