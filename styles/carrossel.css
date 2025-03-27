@@ -39,6 +39,11 @@
 .swiper-button-prev, .swiper-button-next {
   display: block;
 }
+.swiper-button-prev2,
+.swiper-button-next2 {
+  color: var(--rosa-claro);
+  
+}
 
 .swiper-pagination {
   position: initial;
@@ -175,6 +180,13 @@
   .swiper-button-next {
     display: block;
     top: 60%;
+    
+  }
+
+  .swiper-button-prev2,
+  .swiper-button-next2 {
+    color: var(--rosa-claro) !important;
+    
   }
 
   .card {
@@ -217,6 +229,12 @@
     width: 50%;
     margin-left: 3em;
   }
+  .swiper-button-prev2,
+  .swiper-button-next2 {
+    color: var(--rosa-claro) !important;
+    
+  }
+ 
 
 }
 
