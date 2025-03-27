@@ -91,6 +91,32 @@
   padding: 1em;
 }
 
+.card2 {
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 100%;
+  aspect-ratio: 16 / 9; /* Define a proporção 16:9 */
+ /* padding-top: 56.25%; /* Proporção 16:9 (9 / 16 * 100) */
+  border-radius: 10px;
+  /* position: relative; Necessário para o conteúdo do card */
+  display: flex;
+  align-items: center;
+  padding-left: 20px;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  /* overflow: hidden; */
+}
+
+.card-content {
+  color: var(--branco); /* Texto branco para contraste com o fundo */
+  font-size: 1.2em; /* Tamanho do texto */
+  text-align: left; /* Alinha o texto à esquerda */
+  max-width: 50%; /* Limita a largura do texto dentro do card */
+
+}
+
+
 .descricao__titulo {
   color: var(--azul-claro);
   font-weight: 700;
