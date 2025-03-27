@@ -24,6 +24,64 @@ document.getElementById('formulario').addEventListener('submit', function(event)
     document.getElementById('mensagemSucesso').style.display = 'block';
 });
 
+const cardTexts = [
+    {
+        titulo: "Cartão Ourocard Elo Padrão",
+        vantagens: "Vantagens Exclusivas Elo",
+        textos: [
+            "Benefícios exclusivos para suas compras",
+            "Programa de pontos para trocar por prêmios",
+            "Segurança para suas transações"
+        ]
+    },
+    {
+        titulo: "Cartão Ourocard Visa Platinum",
+        vantagens: "Conforto e Segurança",
+        textos: [
+            "Aproveite vantagens globais Visa",
+            "Assistência em viagens internacionais",
+            "Compras protegidas com IA avançada"
+        ]
+    },
+    {
+        titulo: "Cartão Ourocard Mastercard Black",
+        vantagens: "O cartão dos seus sonhos",
+        textos: [
+            "Acesso às melhores salas VIPs",
+            "Descontos em lojas e experiências premium",
+            "Segurança nas compras com IA"
+        ]
+    },
+    {
+        titulo: "Cartão Ourocard Elo Mais",
+        vantagens: "Mais benefícios para você",
+        textos: [
+            "Descontos exclusivos em parceiros Elo",
+            "Seguro viagem gratuito",
+            "Programa de fidelidade recompensador"
+        ]
+    },
+    {
+        titulo: "Cartão Ourocard Elo Nanquim",
+        vantagens: "O melhor Elo para você",
+        textos: [
+            "Acesso ilimitado a salas VIPs em aeroportos",
+            "Vantagens exclusivas no Brasil e no mundo",
+            "Cobertura de seguros ampliada"
+        ]
+    },
+    {
+        titulo: "Cartão Dotz Platinum",
+        vantagens: "Cartão com programa Dotz",
+        textos: [
+            "Acumule pontos Dotz a cada compra",
+            "Troque por produtos e serviços",
+            "Benefícios exclusivos para clientes Dotz"
+        ]
+    }
+];
+
+
 
 var swiper = new Swiper('.swiper', {
     slidesPerView: 1.8, // Mostra 3 slides ao mesmo tempo
@@ -39,8 +97,26 @@ var swiper = new Swiper('.swiper', {
     navigation:{
         nextEl: '.swiper-button-next',
         prevEl: '.swiper-button-prev'
-    }
+    },
+    on: {
+        slideChange: updateCardText // Chama a função ao mudar o slide
+    } 
 });
+
+// Função para atualizar o texto do card
+function updateCardText() {
+    const activeIndex = swiper.activeIndex; // Obtém o índice do slide ativo
+    const cardInfo = cardTexts[activeIndex]; // Pega os textos correspondentes do array
+
+    // Atualiza os textos na div `card`
+    document.querySelector('.descricao__titulo').textContent = cardInfo.titulo;
+    document.querySelector('.descricao__titulo-vantagens').textContent = cardInfo.vantagens;
+
+    const textElements = document.querySelectorAll('.descricao__texto');
+    cardInfo.textos.forEach((texto, index) => {
+        textElements[index].textContent = texto;
+    });
+}
 
 var swiper2 = new Swiper('.swiper2', {
     slidesPerView: 2,  // Exibe 2 slides por vez
