@@ -6,6 +6,7 @@
 @import url("styles/rodape.css");
 @import url("styles/form.css");
 @import url("styles/formulario.css");
+@import url("styles/botaoinicio.css");
 
 @font-face {
     font-family: 'BancoDoBrasilTitulos'; /* Nome para referência */
@@ -43,25 +44,4 @@ body{
     font-family:var(--fonte-secundario);
     font-size: 16px;
     font-weight: 400;
-}
-
-
-#voltarAoInicio {
-    position: fixed;
-    bottom: 20px;
-    right: 20px;
-    padding: 10px 20px;
-    background-color: #007BFF;
-    color: white;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-    display: none; /* Inicialmente escondido */
-    font-size: 20px;
-    font-weight: bold;
-}
-
-#voltarAoInicio i {
-    color: white;
 }
