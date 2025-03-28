@@ -83,7 +83,7 @@
   /* Media Queries para telas menores */
   @media (max-width: 768px) {
     .animated-text {
-      font-size: 7vw; /* Ajuste para fontes maiores */
+      font-size: 6.5vw; /* Ajuste para fontes maiores */
     }
   
     .linha1 {
@@ -109,7 +109,7 @@
   
   @media (max-width: 480px) {
     .animated-text {
-      font-size: 9vw; /* Para dispositivos móveis */
+      font-size: 6vw; /* Para dispositivos móveis */
     }
   
     .linha1 {
