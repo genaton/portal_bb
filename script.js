@@ -196,3 +196,8 @@ function closePopup() {
     document.getElementById('popup').style.display = 'none';
 }
 
+// Redirecionamento para o site do Banco do Brasil Cartões
+function redirecionar() {
+    window.location.href = "https://www.bb.com.br/site/pra-voce/cartoes-de-credito/todos-os-cartoes/";
+}
+
