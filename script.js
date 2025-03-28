@@ -1,29 +1,34 @@
+// Exibe ou oculta o botão "Voltar ao início" com base na rolagem da página
 window.addEventListener('scroll', function() {
     var button = document.getElementById('voltarAoInicio');
-    if (window.scrollY > 100) { // Ajuste o valor conforme necessário
+    if (window.scrollY > 100) { // Exibe o botão se a rolagem for maior que 100px
         button.style.display = 'block';
     } else {
-        button.style.display = 'none';
+        button.style.display = 'none'; // Oculta o botão caso contrário
     }
 });
 
+// Exibe o formulário suspenso ao carregar a página e aplica máscaras aos campos
 window.addEventListener('load', function() {
     document.getElementById('formularioSuspenso').style.display = 'block';
 
-    // Aplicar máscaras aos campos
+    // Aplica máscaras nos campos com o atributo `data-mask`
     Masky.apply(document.querySelectorAll('[data-mask]'));
 });
 
+// Fecha o formulário suspenso ao clicar no botão de fechar
 document.getElementById('fecharFormulario').addEventListener('click', function() {
     document.getElementById('formularioSuspenso').style.display = 'none';
 });
 
+// Exibe a mensagem de sucesso ao enviar o formulário
 document.getElementById('formulario').addEventListener('submit', function(event) {
-    event.preventDefault();
-    document.getElementById('formulario').style.display = 'none';
-    document.getElementById('mensagemSucesso').style.display = 'block';
+    event.preventDefault(); // Evita o comportamento padrão de envio do formulário
+    document.getElementById('formulario').style.display = 'none'; // Oculta o formulário
+    document.getElementById('mensagemSucesso').style.display = 'block'; // Exibe a mensagem de sucesso
 });
 
+// Array com informações dos cartões para exibição dinâmica
 const cardTexts = [
     {
         titulo: "Cartão Ourocard Elo Padrão",
@@ -80,7 +85,8 @@ const cardTexts = [
         ]
     }
 ];
-// Função para atualizar o texto do card
+
+// Atualiza o texto do card com base no slide ativo
 function updateCardText() {
     const activeIndex = swiper.activeIndex; // Obtém o índice do slide ativo
     const cardInfo = cardTexts[activeIndex]; // Pega os textos correspondentes do array
@@ -95,46 +101,44 @@ function updateCardText() {
     });
 }
 
-
+// Configuração do carrossel principal (Swiper)
 var swiper = new Swiper('.swiper', {
-    slidesPerView: 1.8, // Mostra 3 slides ao mesmo tempo
-    spaceBetween: 20, // Espaço de 20px entre eles
+    slidesPerView: 1.8, // Mostra 1.8 slides ao mesmo tempo
+    spaceBetween: 20, // Espaço de 20px entre os slides
     centeredSlides: true, // Centraliza o slide ativo
-    loop: false,
+    loop: false, // Não ativa o loop
     pagination: {
-        effect: "slide",
-  /* ou "coverflow" para efeito 3D */
+        effect: "slide", // Efeito de transição
         el: '.swiper-pagination',
-        clickable: true,
-    },
-    navigation:{
-        nextEl: '.swiper-button-next',
-        prevEl: '.swiper-button-prev'
-    },
-    on: {
-        slideChange: updateCardText // Chama a função ao mudar o slide
-    } 
-});
-
-
-
-var swiper2 = new Swiper('.swiper2', {
-    slidesPerView: 2,  // Exibe 2 slides por vez
-    spaceBetween: 70,   
-    centeredSlides: true, // Garante que os slides fiquem centralizados
-    loop: false,  // Ativa o loop dos slides
-    pagination: {
-        effect: "covesliderflow",  // Efeito visual dos slides
-        el: '.swiper2 .swiper-pagination',  // Seleciona o elemento de paginação
-        clickable: true,  // Habilita a navegação através das bolinhas
+        clickable: true, // Permite clicar na paginação
     },
     navigation: {
-        nextEl: '.swiper2 .swiper-button-next',  // Botão de navegação "próximo"
-        prevEl: '.swiper2 .swiper-button-prev',  // Botão de navegação "anterior"
+        nextEl: '.swiper-button-next', // Botão "próximo"
+        prevEl: '.swiper-button-prev', // Botão "anterior"
     },
-    
+    on: {
+        slideChange: updateCardText // Atualiza o texto ao mudar o slide
+    }
 });
-// Seleciona os grupos de texto
+
+// Configuração do segundo carrossel (Swiper)
+var swiper2 = new Swiper('.swiper2', {
+    slidesPerView: 2, // Exibe 2 slides por vez
+    spaceBetween: 70, // Espaço de 70px entre os slides
+    centeredSlides: true, // Centraliza os slides
+    loop: false, // Não ativa o loop
+    pagination: {
+        effect: "covesliderflow", // Efeito visual
+        el: '.swiper2 .swiper-pagination',
+        clickable: true, // Permite clicar na paginação
+    },
+    navigation: {
+        nextEl: '.swiper2 .swiper-button-next', // Botão "próximo"
+        prevEl: '.swiper2 .swiper-button-prev', // Botão "anterior"
+    },
+});
+
+// Alterna entre dois grupos de textos no banner principal
 const group1 = document.querySelector('.group1');
 const group2 = document.querySelector('.group2');
 
@@ -156,7 +160,7 @@ group2.style.display = 'none';
 // Alterna os textos a cada 10 segundos
 setInterval(toggleTexts, 10000);
 
-//Função de congelar
+// Exibe ou oculta a seção de tópicos com base na posição da rolagem
 window.addEventListener('scroll', function() {
     var topicos = document.querySelector('.topicos');
     var rect = topicos.getBoundingClientRect();
@@ -165,20 +169,20 @@ window.addEventListener('scroll', function() {
     var scrollPosition = window.scrollY + windowHeight;
 
     if (rect.top < windowHeight && rect.bottom >= 0 && scrollPosition < documentHeight) {
-        topicos.style.display = 'block'; // Exibe a seção quando ela entra na tela e não ultrapassa o tamanho da página
+        topicos.style.display = 'block'; // Exibe a seção quando visível na tela
     } else {
-        topicos.style.display = 'none'; // Oculta a seção quando ela sai da tela ou ultrapassa o tamanho da página
+        topicos.style.display = 'none'; // Oculta a seção caso contrário
     }
 });
 
-// Configuração do VLibras
+// Configuração do VLibras (acessibilidade)
 document.addEventListener('DOMContentLoaded', function() {
     new window.VLibras.Widget({
-        rootPath: 'https://vlibras.gov.br/app',
-        personalization: 'https://vlibras.gov.br/api/config',
-        opacity: 0.7,     // Opacidade do botão (0 a 1)
-        position: 'R',    // Posição (L = esquerda, R = direita)
-        avatar: 'female'  // Avatar ('male', 'female' ou 'random')
+        rootPath: 'https://vlibras.gov.br/app', // Caminho do VLibras
+        personalization: 'https://vlibras.gov.br/api/config', // Configuração personalizada
+        opacity: 0.7, // Opacidade do botão
+        position: 'R', // Posição do botão (R = direita)
+        avatar: 'female' // Avatar do VLibras
     });
 });
 
