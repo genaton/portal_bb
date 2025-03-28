@@ -383,7 +383,18 @@
                 <img src="./img/Banner-full-usa-que-tem-DK.webp"
                     alt="Foto de um jovem rapaz negro, segurando um copo com canudo em uma mão e um celular na outra. Ele olha para o celular e sorri. Sobre o rapaz, está a ilustração vazada de um cartão Ourocard. À esquerda da foto, está escrito: “O Ourocard tem tudo que você precisa">
                 <h2 class="topicos__banner">Garanta o seu Ourocard e comece já a desfrutar dos benefícios!</h2>
-                <button type="submit" class="btn btn-primary">Tenho interesse!</button>
+                <button class="popup-button" onclick="showPopup(event)">Tenho interesse!</button>
+
+                <div class="popup" id="popup">
+                    <span class="close" onclick="closePopup()">&times;</span>
+                    <div class="popup-content">
+                        <div class="popup-text">
+                            <h1>Peça seu cartão de crédito em poucos cliques.</h1>
+                            <p>Aponte a câmera do seu celular para o qr-code ao lado para baixar o App BB e solicitar o seu cartão.</p>
+                        </div>
+                        <img src="./img/qrcode.webp" alt="QR Code">
+                    </div>
+                </div>    
             </div>
         </form>
 
