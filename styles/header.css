@@ -25,6 +25,10 @@
     justify-content: space-between;
     align-items: center;
     position: relative;
+    height:70px;
+    white-space: nowrap; /* Impede que o texto quebre para a próxima linha */
+    position: relative; /* Importante para criar um contexto de empilhamento para o menu */
+    z-index: 100; /* Um valor alto para o header como um todo */
 }
 
 .container {
