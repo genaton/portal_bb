@@ -1,5 +1,5 @@
 body {
-    font-family: Arial, sans-serif;
+    font-family: var(--fonte-principal);
 }
 
 .formulario {
@@ -84,4 +84,21 @@ body {
 .mensagem-sucesso p {
     font-size: 18px;
     margin-top: 10px;
+}
+@media (max-width: 1280px){
+
+    .formulario {
+        position: absolute;
+        top: 20px; /* Ajusta a distância do topo */
+        left: 50%; /* Centraliza horizontalmente */
+        transform: translateX(-50%); /* Compensa o deslocamento para centralizar */
+        background-color: #FFF7B5; /* Cor do fundo */
+        padding: 20px;
+        border-radius: 10px; /* Bordas arredondadas */
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Adiciona sombra */
+        width: 90%; /* Adapta largura para telas menores */
+        max-width: 300px; /* Limita a largura máxima */
+        z-index: 10000; /* Mantém o formulário acima de outros elementos */
+    }
+
 }
